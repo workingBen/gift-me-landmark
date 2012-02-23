@@ -1,4 +1,4 @@
-MatchMachine::Application.routes.draw do
+WantWillWont::Application.routes.draw do
 
   root to: 'home#index'
   devise_for :users
