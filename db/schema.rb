@@ -11,24 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120118210216) do
-
-  create_table "message_templates", :force => true do |t|
-    t.string   "subject"
-    t.text     "message"
-    t.integer  "user_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "messages", :force => true do |t|
-    t.string   "subject"
-    t.text     "message"
-    t.integer  "user_id"
-    t.string   "sent_to_username"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(:version => 20120111225550) do
 
   create_table "users", :force => true do |t|
     t.string   "email",                                 :default => "", :null => false
@@ -43,9 +26,6 @@ ActiveRecord::Schema.define(:version => 20120118210216) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "username"
-    t.string   "okcupid_pass"
-    t.integer  "messages_count",                        :default => 0
   end
 
   add_index "users", ["email"], :name => "index_users_on_email", :unique => true

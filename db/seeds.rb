@@ -8,5 +8,5 @@
 #
 puts 'SETTING UP DEFAULT USER LOGIN'
 user = User.create! :name => 'Matchmachine Tester', :email => 'benjamin.pellow@gmail.com', :password => 'please', :password_confirmation => 'please' 
-puts 'New user created: ' << user.username
+puts 'New user created: ' << user.email
 #   

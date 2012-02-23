@@ -6,7 +6,6 @@
  *= require_tree . 
  *= require chosen
  *= require blue
- *= require okcupid
 */
 .message_modal {
   padding: 8px 8px;
@@ -95,12 +94,19 @@ div {
   padding-top: 40px;
   width: 1260px;
 }
+.big-logo {
+  position: fixed;
+  margin-left: -290px;
+  margin-top: -140px;
+  top: 50%;
+  left: 50%;
+}
 .logo {
   margin-top: 20px;
   margin-left: 10%;
 }
 body {
-  background: #2963A4;
+  background: #A51B1B;
 }
 ul.hmenu {
   list-style: none;	

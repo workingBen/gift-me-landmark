@@ -1,0 +1,8 @@
+LOG:  database system was shut down at 2012-01-12 11:39:09 PST
+LOG:  database system is ready to accept connections
+LOG:  autovacuum launcher started
+FATAL:  database "bpellow" does not exist
+FATAL:  role "root" does not exist
+FATAL:  role "postgres" does not exist
+FATAL:  database "bpellow" does not exist
+FATAL:  role "root" does not exist
