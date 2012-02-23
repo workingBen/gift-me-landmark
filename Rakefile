@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Wantwillwont::Application.load_tasks
+MatchMachine::Application.load_tasks

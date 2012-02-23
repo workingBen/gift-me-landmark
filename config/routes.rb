@@ -1,4 +1,9 @@
-Wantwillwont::Application.routes.draw do
+MatchMachine::Application.routes.draw do
+
+  root to: 'home#index'
+  devise_for :users
+  resources :users, only: :show
+
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
@@ -45,10 +50,6 @@ Wantwillwont::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
-
-  # You can have the root of your site routed with "root"
-  # just remember to delete public/index.html.
-  # root :to => 'welcome#index'
 
   # See how all your routes lay out with "rake routes"
 

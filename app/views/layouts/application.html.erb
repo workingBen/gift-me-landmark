@@ -1,13 +1,23 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Wantwillwont</title>
+  <title>MatchMachine</title>
   <%= stylesheet_link_tag    "application" %>
   <%= javascript_include_tag "application" %>
+  <%= javascript_include_tag 'https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.16/jquery-ui.min.js' %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <% unless controller.controller_name == 'home' and controller.action_name == 'index' %>
+    <%= link_to image_tag('want_will_wont_sm.png', class: 'logo'), root_path %>
+  <% end %>
+  <ul class="hmenu">
+    <%= render 'shared/navigation' %>
+  </ul>
 
+  <%- flash.each do |name, msg| -%>
+    <%= content_tag :div, msg, :id => "flash_#{name}", style: 'display: none;' if msg.is_a?(String) %>
+  <%- end -%>
 <%= yield %>
 
 </body>

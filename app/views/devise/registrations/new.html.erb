@@ -1,0 +1,34 @@
+<div class="centerbox_sm clear">
+  <div class="signin">
+    <%= image_tag 'sign_up_title.png', class: 'center' %>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name)) do |f| %>
+  <%= devise_error_messages! %>
+
+  <p class="nolabel">
+    <%= f.email_field :email, placeholder: 'Email' %>
+  </p>
+
+  <p class="nolabel">
+    <%= f.password_field :password, placeholder: 'Password' %>
+  </p>
+    
+  <p class="nolabel">
+    <%= f.password_field :password_confirmation, placeholder: 'Confirm Password' %>
+  </p>
+    
+  <p class="nolabel">
+    <%= f.text_field :username, placeholder: 'Okcupid Username', not_chzn: true %>
+  </p>
+
+  <p class="nolabel">
+    <%= f.password_field :okcupid_pass, placeholder: 'Okcupid Password' %>
+  </p>
+    
+  <div><%= f.submit "Sign up", class: 'fr submit' %></div>
+  <div class="clear"></div>
+<% end %>
+
+  </div>
+  <%= render :partial => "devise/shared/links" %>
+</div>

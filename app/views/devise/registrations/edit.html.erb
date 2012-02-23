@@ -1,0 +1,47 @@
+<div class="centerbox_sm clear">
+  <div class="signin">
+    <%= image_tag 'edit_user_title.png', class: 'center' %>
+
+<%= form_for(resource, :as => resource_name, :url => registration_path(resource_name), :html => { :method => :put }) do |f| %>
+  <%= devise_error_messages! %>
+
+  <p class="nolabel">
+    <%= f.email_field :email, placeholder: 'Email' %>
+  </p>
+  
+  <p class="nolabel">
+    <%= f.text_field :username, placeholder: 'Okcupid Username', not_chzn: true %>
+  </p>
+
+  <p class="nolabel">
+    <%= f.password_field :okcupid_pass, placeholder: 'Okcupid Password' %>
+  </p>
+
+  <p class="nolabel">
+    <i>(leave blank if you don't want to change it)</i><br/>
+    <%= f.password_field :password, placeholder: 'Password' %>
+  </p>
+    
+  <p class="nolabel">
+    <%= f.password_field :password_confirmation, placeholder: 'Confirm Password' %>
+  </p>
+
+  <p class="nolabel">
+    <i>(we need your current password to confirm your changes)</i><br />
+    <%= f.password_field :current_password, placeholder: 'Current Password' %>
+  </p>
+    
+  <div><%= f.submit "Update" %></div>
+<% end %>
+
+</div>
+<br />
+  <div class="signin">
+    <%= image_tag 'unhappy_title.png', class: 'center' %>
+
+<%= button_to "Cancel my account!", registration_path(resource_name), :confirm => "Are you sure?", :method => :delete %>
+  </div>
+
+  <%#= link_to "Back", :back, style: "font-size: 1.5em;" %>
+</div>
+
