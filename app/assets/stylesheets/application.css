@@ -11,7 +11,7 @@
   padding: 8px 8px;
   width: 430px;
   border-radius: 5px;
-  background-color: rgba(24, 59, 98, 0.8);
+  background-color: rgba(236, 73, 21, 0.8);
   border: solid 1px #1D4063;
   position: fixed;
   top: 50%;
@@ -34,7 +34,7 @@
 }
 .signin {
   border: 1px solid #d8d8d8;
-  background-color:rgba(24,59,98,0.6);
+  background-color: rgba(236, 73, 21, 0.8);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
 	-border-radius: 5px;
@@ -106,7 +106,7 @@ div {
   margin-left: 10%;
 }
 body {
-  background: #A51B1B;
+  background: #F0F0F0;
 }
 ul.hmenu {
   list-style: none;	

@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-WantWillWont::Application.load_tasks
+GiftMeLandmark::Application.load_tasks

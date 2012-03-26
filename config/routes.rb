@@ -1,4 +1,4 @@
-WantWillWont::Application.routes.draw do
+GiftMeLandmark::Application.routes.draw do
 
   root to: 'home#index'
   devise_for :users

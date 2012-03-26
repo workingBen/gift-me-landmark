@@ -6,3 +6,7 @@ FATAL:  role "root" does not exist
 FATAL:  role "postgres" does not exist
 FATAL:  database "bpellow" does not exist
 FATAL:  role "root" does not exist
+WARNING:  pgstat wait timeout
+WARNING:  pgstat wait timeout
+WARNING:  pgstat wait timeout
+WARNING:  pgstat wait timeout

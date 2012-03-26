@@ -4,7 +4,7 @@ describe User do
   
   before(:each) do
     @attr = { 
-      name: "WantWillWont TestUser",
+      name: "GiftMeLandmark TestUser",
       email: "benjamin.pellow@gmail.com",
       password: "password",
       password_confirmation: "password",
